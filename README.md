@@ -1,11 +1,11 @@
 <p align="center">
-    <a href="" style="width: 120px; max-width: 250px;" class="svg-pan-zoom_viewport">
+    <a href="#" style="width: 120px; max-width: 250px;" class="svg-pan-zoom_viewport">
         <img src="https://adherence.dev/assets/images/other-logos/vue.png" max-width="250" width="150" alt="Vue Logo">
     </a>
     <a href="https://adherence.dev" style="width: 120px; max-width: 250px;" >
         <img src="https://adherence.dev/assets/images/logo.png" max-width="250" width="150" alt="Adherence.dev Logo">
     </a>
-    <a href="" style="width: 120px; max-width: 250px;" >
+    <a href="#" style="width: 120px; max-width: 250px;" >
         <img src="https://adherence.dev/assets/images/other-logos/wp.svg" max-width="250" width="150" alt="WP Logo">
     </a>
 </p>
@@ -26,12 +26,12 @@
 
 In root directory 
 
-create .env file and put these lines bellow
-
 ```
 
+npm install
+cd adherence_vue_frontend
+npm run build
 ```
-This dir name should be correct
 
 ------------------------------
 
