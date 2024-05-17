@@ -1,12 +1,12 @@
 <p align="center">
     <a href="" style="width: 120px; max-width: 250px;" class="svg-pan-zoom_viewport">
-        <img src="https://adherence.dev/assets/images/other-logos/vue.png" max-width="300" width="300" height="170" style="max-width: 250px;">
+        <img src="https://adherence.dev/assets/images/other-logos/vue.png" max-width="250" width="150" alt="Vue Logo">
     </a>
     <a href="https://adherence.dev" style="width: 120px; max-width: 250px;" >
-        <img src="https://adherence.dev/assets/images/logo.png" max-width="250" width="150" alt="React Icons">
+        <img src="https://adherence.dev/assets/images/logo.png" max-width="250" width="150" alt="Adherence.dev Logo">
     </a>
     <a href="" style="width: 120px; max-width: 250px;" >
-        <img src="https://adherence.dev/assets/images/other-logos/wp.svg" max-width="250" width="150" alt="React Icons">
+        <img src="https://adherence.dev/assets/images/other-logos/wp.svg" max-width="250" width="150" alt="WP Logo">
     </a>
 </p>
 
