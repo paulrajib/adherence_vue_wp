@@ -1,0 +1,19 @@
+vue create my-vue-frontend
+gives:
+Running completion hooks...
+/babel.config.js
+  0:0  error  Parsing error: [BABEL] /babel.config.js: Unexpected token '.' (While processing: "/node_modules/@vue/cli-plugin-babel/preset.js")
+
+/src/App.vue
+  0:0  error  Parsing error: [BABEL] /src/App.vue: Unexpected token '.' (While processing: "/node_modules/@vue/cli-plugin-babel/preset.js")
+
+/src/components/HelloWorld.vue
+  0:0  error  Parsing error: [BABEL] /src/components/HelloWorld.vue: Unexpected token '.' (While processing: "/node_modules/@vue/cli-plugin-babel/preset.js")
+
+/src/main.js
+  0:0  error  Parsing error: [BABEL] /src/main.js: Unexpected token '.' (While processing: "/node_modules/@vue/cli-plugin-babel/preset.js")
+
+/vue.config.js
+  0:0  error  Parsing error: [BABEL] /vue.config.js: Unexpected token '.' (While processing: "/node_modules/@vue/cli-plugin-babel/preset.js")
+
+✖ 5 problems (5 errors, 0 warnings)
