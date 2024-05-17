@@ -1,4 +1,24 @@
-vue create my-vue-frontend
+
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+
+export default {
+  components: {
+    AppHeader,
+    AppFooter
+  }
+};
+
+
+
+
+vue create new-vue-project
+cd new-vue-project
+npm run build
+
+
+
+vue create adherence_vue_frontend
 gives:
 Running completion hooks...
 /babel.config.js
