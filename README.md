@@ -28,8 +28,18 @@ In root directory
 
 ```
 
-npm install
 cd adherence_vue_frontend
+npm install
+
+```
+To test setup:
+```
+npm run lint
+
+```
+
+Then run:
+```
 npm run build
 ```
 
