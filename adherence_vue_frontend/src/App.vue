@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="inside-template">
     <img :src="image" alt="New logo">
     <img :src="imageSrc" alt="Description of image">
 
@@ -37,7 +37,8 @@ export default {
   },
   data: function () {
     return {
-      image: image
+      image: image,
+      imageSrc: imagePath
     }
   }
 };
@@ -50,6 +51,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 120px;
+}
+.inside-template{
+  max-width: 550px;
+  color: red;
+  font-size: 20px;
+  background-color: yellow;
 }
 </style>
