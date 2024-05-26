@@ -27,26 +27,32 @@
 In root directory 
 
 ```
-
 cd adherence_vue_frontend
 npm install
-
 ```
 To test setup:
 ```
 npm run lint
-
 ```
 
-Then run:
+Then, for production build, run: ``` npm run build ```
+or to keep under watch, run: ``` npm run serve ```
+
+you may get the Vue app running at/ or something like this depending on your setup:
 ```
-npm run build
+  - Local:   http://localhost:8080/wp-content/themes/adherence_vue/adherence_vue_frontend/dist/ 
+  - Network: http://192.168.31.31:8080/wp-content/themes/adherence_vue/adherence_vue_frontend/dist/
+
 ```
+But this watch will only update in this links given above, to get o/p in wordpress run: `npm run build`
 
 ------------------------------
+To use SASS
+Run ``` npm run sass``` to compile the sass automaticly with every change in a separate terminal
+
+Or run  ``` npm run dev ``` to serve Vue, compile SASS and keep all of these under watch concurrently for any changes.
 
 ```
-
 ```
 
   

@@ -1,4 +1,16 @@
 <?php 
+
+
+/*     function get_vue_script_name($pattern) {
+        $dir = get_template_directory() . '/adherence_vue_frontend/dist/js/';
+        $files = glob($dir . $pattern);
+        if ($files) {
+            return str_replace(get_template_directory(), get_template_directory_uri(), $files[0]);
+        }
+        return '';
+    } */
+
+
 function enqueue_vue_scripts() {
 
     $chunk_vendors = get_vue_script_name('chunk-vendors.*.js');
@@ -37,3 +49,37 @@ add_action('wp_enqueue_scripts', 'enqueue_vue_scripts');
 
 
  ?>
+
+
+
+<!-- vue.config.js -->
+
+<!-- module.exports = defineConfig({
+  transpileDependencies: true,
+  publicPath: '/wp-content/themes/adherence_vue/adherence_vue_frontend/dist/',
+  outputDir: 'dist',
+  assetsDir: 'assets',
+  // other configurations
+}); -->
+
+
+
+
+package.json
+{
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "sass": "sass --watch scss:css"
+    }
+}
+
+"scripts": {
+    "serve": "npm-run-all --parallel serve sass",
+    "build": "vue-cli-service build && npm run sass",
+    "lint": "vue-cli-service lint",
+    "sass": "sass --watch assets/scss/main.scss:assets/css/main.css"
+  },
+
+

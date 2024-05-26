@@ -1,0 +1,21 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 120px;
+}
+
+.inside-template {
+  max-width: 550px;
+  color: red;
+  font-size: 20px;
+  background-color: rgb(252, 19, 77);
+}
+
+.test {
+  max-width: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
