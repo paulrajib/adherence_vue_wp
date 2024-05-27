@@ -1,46 +1,56 @@
 <template>
-  <div class="inside-template">
-    <img :src="image" alt="New logo">
-    <img :src="imageSrc" alt="Description of image">
-    <img :src="require('@/assets/logo_1.png')" alt="New logo">
-    <figure class="fd_picture">
-      <img
-        :src="require(`@/assets/images/logo_2.png`)"
-        :alt="`Adh Lg`"
-      />
-    </figure>
+  <div id="app">
+    <!-- Header with Logo and Navigation -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img :src="themeData.logo" alt="Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <!-- Add more nav links as needed -->
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <AppHeader />
-    <main>Main content</main>
-    <AppFooter />
+    <!-- Main Content Area -->
+    <main class="container">
+      <router-view></router-view>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center mt-4">
+      <div class="container">
+        <span class="text-muted">Follow us on:</span>
+        <a :href="themeData.facebookLink" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a :href="themeData.twitterLink" target="_blank"><i class="fab fa-twitter"></i></a>
+        <!-- Add more social media icons as needed -->
+      </div>
+      <p>&copy; 2024 Your Company</p>
+    </footer>
   </div>
 </template>
 
 <script>
-import './assets/css/main.css'; // Adjust the path according to your project structure
-
-import HelloWorld from './components/HelloWorld.vue';
-import AppHeader from './components/AppHeader.vue';
-import AppFooter from './components/AppFooter.vue';
-// import logoNew from '@/assets/images/logo.png';
-import imagePath from './assets/logo_1.png';
-import image from "./assets/php-hati.svg";
-
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-    AppHeader,
-    AppFooter
-  },
-  data: function () {
+  data() {
     return {
-      image: image,
-      imageSrc: imagePath
-    }
+      themeData: window.themeData || {}
+    };
   }
-};
+}
 </script>
 
+<style lang="scss">
+/* Import global styles */
+@import '@/assets/scss/main.scss';
+
+/* Add additional styles here if necessary */
+</style>

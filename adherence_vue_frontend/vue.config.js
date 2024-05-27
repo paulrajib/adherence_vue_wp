@@ -11,7 +11,12 @@ module.exports = defineConfig({
         pathRewrite: { '^/wp-json': '/wp-json' }
       }
     }
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/assets/scss/main.scss";`
+      }
+    }
   }
 });
-
-

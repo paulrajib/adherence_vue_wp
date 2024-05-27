@@ -1,6 +1,7 @@
-// main.scss
- @import 'pages/home';
-
- .test{
-    max-width: 30px;
- }
+// src/assets/scss/main.scss
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+@import 'pages/home';
