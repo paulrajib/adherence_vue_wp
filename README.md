@@ -44,7 +44,8 @@ you may get the Vue app running at/ or something like this depending on your set
   - Network: http://192.168.31.31:8080/wp-content/themes/adherence_vue/adherence_vue_frontend/dist/
 
 ```
-But this watch will only update in this links given above, to get o/p in wordpress run: `npm run build`
+But this watch will only update in this links given above
+## To get o/p in wordpress run: `npm run build`
 
 ------------------------------
 To use SASS
@@ -54,5 +55,6 @@ Or run  ``` npm run dev ``` to serve Vue, compile SASS and keep all of these und
 
 ```
 ```
-**Note: npm-run-all may not necessary for next setup update
+To remove dist `rm -rf dist`, then re-run `npm run build`
+** ➜ Note: npm-run-all may not necessary for next setup update
   
