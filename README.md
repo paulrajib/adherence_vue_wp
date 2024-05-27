@@ -54,5 +54,5 @@ Or run  ``` npm run dev ``` to serve Vue, compile SASS and keep all of these und
 
 ```
 ```
-
+**Note: npm-run-all may not necessary for next setup update
   

@@ -83,3 +83,54 @@ package.json
   },
 
 
+  
+  
+// src/main.js
+  /* import { createApp } from 'vue'; */
+/* import Vue from 'vue'; */
+/* import App from './App.vue'; */
+
+// createApp(App).mount('#app');
+
+/*
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
+*/
+
+
+App.vue
+
+
+<script>
+export default {
+  data() {
+    return {
+      logo: '<?php echo get_theme_mod('theme_logo'); ?>',
+      facebookLink: '<?php echo get_theme_mod('theme_facebook_link'); ?>',
+      twitterLink: '<?php echo get_theme_mod('theme_twitter_link'); ?>',
+    };
+  }
+}
+</script>
+
+
+<style scoped>
+/* Add your global styles here */
+.logo {
+  height: 40px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px;
+}
+.footer a {
+  margin: 0 10px;
+  color: #000;
+}
+</style>

@@ -11,6 +11,7 @@
         if (defined('WP_ENV') && WP_ENV === 'development') {
             // Load from Vue CLI dev server
             wp_enqueue_script('vue-dev', 'http://localhost:8080/js/app.js', [], null, true);
+            wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
         } else {
             // Scan the dist directory for the hashed filenames
             $app_scripts = glob($dist_path . 'js/app.*.js');
@@ -54,6 +55,20 @@
 
         // Enqueue the Sass compiled CSS
         wp_enqueue_style('main-styles', $css_path . 'main.css', array(), null);
+
+        // Enqueue Bootstrap
+        wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+
+        // Localize the script with data from the theme customizer
+        $theme_data = array(
+            'logo' => get_theme_mod('theme_logo'),
+            'facebookLink' => get_theme_mod('theme_facebook_link'),
+            'twitterLink' => get_theme_mod('theme_twitter_link'),
+        );
+
+        wp_localize_script('app', 'themeData', $theme_data);
+
     }
     add_action('wp_enqueue_scripts', 'enqueue_vue_scripts');
 
